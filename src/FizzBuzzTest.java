@@ -46,9 +46,41 @@ class FizzBuzzTest {
 	
 	
 	@Test
-	void generateNumeroFizzBuzz30() {
+	void generateNumero30() {
 		FizzBuzz fb = new FizzBuzz();
 		assertEquals("FizzBuzz",fb.generate1(30));
+		
+	}
+	
+	@Test
+	void generateNumero20() {
+		FizzBuzz fb = new FizzBuzz();
+		assertEquals("Buzz",fb.generate1(20));
+		
+	}
+	@Test
+	void generateNumero25() {
+		FizzBuzz fb = new FizzBuzz();
+		assertEquals("Buzz",fb.generate1(25));
+		
+	}
+	
+	@Test
+	void generateNumero24() {
+		FizzBuzz fb = new FizzBuzz();
+		assertEquals("Fizz",fb.generate1(24));
+		
+	}
+	@Test
+	void generateNumero45() {
+		FizzBuzz fb = new FizzBuzz();
+		assertEquals("FizzBuzz",fb.generate1(45));
+		
+	}
+	@Test
+	void generateNumero46() {
+		FizzBuzz fb = new FizzBuzz();
+		assertEquals("46",fb.generate1(46));
 		
 	}
 	
