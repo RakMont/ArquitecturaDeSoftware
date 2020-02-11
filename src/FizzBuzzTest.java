@@ -4,7 +4,12 @@ import org.junit.jupiter.api.Test;
 
 class FizzBuzzTest {
 
-	
+	@Test
+	void generateNumero0() {
+		FizzBuzz fb = new FizzBuzz();
+		assertEquals("FizzBuzz",fb.generate1(0));
+		
+	}
 	
 	@Test
 	void generateNumero1() {
@@ -84,6 +89,18 @@ class FizzBuzzTest {
 		
 	}
 	
-   
+	@Test
+	void generateNumero75() {
+		FizzBuzz fb = new FizzBuzz();
+		assertEquals("FizzBuzz",fb.generate1(75));
+		
+	}
+	
+	@Test
+	void generateNumero80() {
+		FizzBuzz fb = new FizzBuzz();
+		assertEquals("Buzz",fb.generate1(80));
+		
+	}
 	
 }
